@@ -719,3 +719,138 @@ footer {
     color: #3498db;
     padding-left: 5px;
 }
+
+/* About Page Styles */
+.about {
+    padding: 120px 0 50px;
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.about-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.about-card i {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.about-card p, .about-card ul {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-card ul li:before {
+    content: "•";
+    color: #2c3e50;
+    position: absolute;
+    left: 0;
+}
+
+.product-comparison {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.product-comparison h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.comparison-table th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.comparison-table i.fa-check {
+    color: #2ecc71;
+}
+
+.comparison-table i.fa-times {
+    color: #e74c3c;
+}
+
+/* Responsive styles for about page */
+@media (max-width: 768px) {
+    .about {
+        padding: 100px 0 30px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .product-comparison {
+        margin: 0 15px;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+}
